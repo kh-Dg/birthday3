@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>تولدت مبارک 🎈 | جشن تولد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- صفحه اسپلش -->
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <div class="splash-icon">🎪</div>
+        <h2>سلام!</h2>
+        <p>قدم به جشن تولد بگذار...</p>
+        <button class="splash-btn" id="splashBtn">ورود به جشن 🎈</button>
+    </div>
+</div>
+
+<!-- صفحه اصلی -->
+<div class="main-page" id="mainPage">
+    
+    <!-- بنر تبریک بالای صفحه -->
+    <div class="top-banner">
+        <div class="banner-text">
+            <span>🎉</span> امروز روز توئه! <span>🎉</span>
+        </div>
+    </div>
+
+    <div class="birthday-card">
+        <div class="card-image">
+            <div class="photo-frame">
+                <img src="./profile.jpg" alt="عکس پروفایل" id="profileImage">
+            </div>
+            <!-- تاج گل بالای عکس -->
+            <div class="flower-crown">🌼🌸🌺</div>
+        </div>
+        
+        <div class="card-content">
+            <!-- شمارنده سن به صورت کیک -->
+            <div class="cake-counter" id="cakeCounter">
+                <span class="candle">🕯️</span>
+                <span class="cake-age" id="ageNumber">25</span>
+                <span class="candle">🕯️</span>
+            </div>
+            
+            <h1 id="birthdayName">تولدت مبارک!</h1>
+            
+            <div class="special-date">
+                <span class="date-badge">📅</span>
+                <span id="birthdayDate">۱۴۰۳/۰۳/۱۵</span>
+                <span class="date-badge">🎂</span>
+            </div>
+            
+            <div class="wish-box">
+                <div class="wish-icon">💝</div>
+                <p id="birthdayMessage"></p>
+                <div class="typing-cursor"></div>
+            </div>
+            
+            <div class="from-box">
+                <span class="from-label">🎁 از طرف:</span>
+                <div class="from-name" id="senderName">دوستت دارم</div>
+            </div>
+            
+            <div class="buttons-group">
+                <button class="music-btn" id="musicBtn">
+                    <span class="music-icon">🔊</span>
+                    <span class="music-text">پخش موزیک</span>
+                </button>
+                <button class="surprise-btn" id="giftBtn">
+                    <span>🎁</span> سورپرایز
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- نوار پایین صفحه با آرزوها -->
+    <div class="bottom-bar">
+        <div class="wishes-scroll">
+            <span>✨ بهترین آرزوها برای تو ✨</span>
+            <span>🎈</span>
+            <span>💝 تولدت مبارک عزیزترین 💝</span>
+            <span>🎂</span>
+            <span>✨ بهترین آرزوها برای تو ✨</span>
+        </div>
+    </div>
+</div>
+
+<!-- مودال سورپرایز -->
+<div class="gift-modal" id="giftModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-icon">🎁🎈🎂</div>
+        <h3>سورپرایز ویژه!</h3>
+        <p id="giftText"></p>
+        <div class="modal-buttons">
+            <a href="#" class="gift-link" id="giftLink">دریافت هدیه 🎁</a>
+        </div>
+    </div>
+</div>
+
+<audio id="birthdayAudio" loop preload="auto">
+    <source src="./birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="main.js"></script>
+</body>
+</html>
